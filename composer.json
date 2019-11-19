@@ -1,0 +1,29 @@
+{
+    "name": "apkit/apires",
+    "description": "Formated Resfull API Response",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "arispujud",
+            "email": "ariz.pk@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Apkit\\Apires\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Apkit\\Apires\\ApiresServiceProvider"
+            ],
+            "aliases": {
+                "Apires": "Apkit\\Apires\\Apires"
+            }
+        }
+    }
+}
