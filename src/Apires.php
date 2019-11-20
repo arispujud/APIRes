@@ -10,7 +10,7 @@ class Apires
     }
 
     /**
-    * @param int $number
+    * @param object $data
     * @return string
     */
     public static function format($data=null) {
@@ -50,5 +50,19 @@ class Apires
         ];
 
         return $res;
+    }
+
+    public static function errorData($dev,$prod){
+        $res = [
+            "status" => false,
+            "message" => array(
+                "dev" => $dev,
+                "prod" => $prod
+            ),
+            "data" => null
+        ];
+
+        return $res;
+
     }
 }
